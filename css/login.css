@@ -1,0 +1,37 @@
+html {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Abaixo está o código para estilização mobile*/
+@media screen and (min-width:320px) and (max-width: 767px)   {
+    body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #0f0f0f;
+    }
+
+    main {
+        padding: 5vh;
+    }
+    #container {
+        display: grid;
+
+    }
+    #areaLogin {
+        background-color: #FFF;
+        padding: 10%;
+    }
+
+}
+/*Abaixo está o código para estilização desktop*/
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
