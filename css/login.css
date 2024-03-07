@@ -24,11 +24,15 @@ html {
         height: 100%;
         margin: 0 5vw;
     }
+    #imagem {
+        display: none;
+    }
     #areaLogin {
         background-color: #3578b6;
         display: grid;
         gap: 2px;
         padding: 2vh 5vw;
+        height: auto;
     }
     .inputs {
         height: 3vh;
