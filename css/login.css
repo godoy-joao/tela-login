@@ -3,8 +3,9 @@ html {
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*Abaixo está o código para estilização mobile*/
-@media screen and (min-width:320px) and (max-width: 767px)   {
+@media screen and (min-width:320px) and (max-width: 767px) {
     body {
         margin: 0;
         height: 100%;
@@ -18,22 +19,37 @@ html {
 
         width: 100%;
     }
+
     #container {
         display: grid;
         width: 90vw;
         height: 100%;
         margin: 0 5vw;
     }
-    #imagem {
+
+    #label {
+        text-align: center;
+        font-size: larger;
+        margin-bottom: 2vh;
+        font-weight: 600;
+        color: white;
+    }
+
+    #image {
         display: none;
     }
+
     #areaLogin {
         background-color: #3578b6;
-        display: grid;
-        gap: 2px;
         padding: 2vh 5vw;
         height: auto;
     }
+
+    #login-box {
+        display: grid;
+        gap: 2px;
+    }
+
     .inputs {
         height: 3vh;
         background-color: white;
@@ -44,16 +60,30 @@ html {
         grid-template-columns: 5vw 75vw;
         justify-items: stretch;
     }
+
     .inputs input {
         background-color: white;
         border: none;
         max-width: 72vw;
+        outline: none;
     }
+
+    #areaLogin a {
+        justify-self: center;
+    }
+
     .icone_input {
         margin-left: 3px;
     }
 
+    #loginButton {
+        margin-top: 1vh;
+        width: 18vw;
+        height: 3vh;
+    }
+
 }
+
 /*Abaixo está o código para estilização desktop*/
 @media screen and (min-width: 768px) {
     body {
@@ -61,4 +91,101 @@ html {
         height: 100%;
         width: 100%;
     }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #container {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../assets/background.jpg);
+        background-size: 100% 100%;
+    }
+
+    #bg {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        display: none;
+    }
+
+    #areaLogin {
+        position: absolute;
+        z-index: 5;
+        height: 100vh;
+        width: 25vw;
+        right: 0%;
+        background-color: #3a3c528f;
+        display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login-box {
+        background-color: rgb(36, 38, 51);
+        width: 80%;
+        height: 15%;
+        padding: 6%;
+        display: grid;
+        grid-template-rows: 19% 28% 28% 19%;
+        gap: 2%;
+    }
+
+    #label {
+        text-align: center;
+        font-size: larger;
+        margin-bottom: 2vh;
+        font-weight: 600;
+        color: white;
+    }
+
+    .inputs {
+        height: 3.5vh;
+        background-color: white;
+        border-radius: 3vw;
+        display: grid;
+        justify-content: start;
+        align-items: center;
+        padding: 1%;
+        grid-template-columns: 10% 90%;
+        gap: 2px;
+        justify-items: stretch;
+    }
+
+    .inputs svg {
+        height: 60%;
+        margin-left: 5px;
+    }
+
+    .inputs input {
+        background-color: white;
+        border: none;
+        max-width: 90%;
+        width: 90%;
+        font-size: larger;
+        outline: none;
+        padding: 0;
+        padding-top: 1px;
+    }
+
+    #areaLogin a {
+        justify-self: center;
+    }
+
+    #loginButton {
+        margin-top: 1vh;
+        width: 12vw;
+        height: 3vh;
+        background-color: rgb(0, 73, 168);
+        border: 1px solid rgb(0, 101, 168);
+    }
+
+
 }
