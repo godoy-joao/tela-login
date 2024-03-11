@@ -1,5 +1,5 @@
 html {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -11,14 +11,89 @@ body {
     header {
         height: 10vh;
         width: 100%;
-        
         background-color: rgb(3, 130, 214);
     }
+
     #logo {
         overflow: hidden;
         width: 100px;
     }
+
+    #wrapper {
+        display: grid;
+        height: 100%;
+
+    }
+
+    .rows {
+        width: 96%;
+        padding: 0 2%;
+    }
+
+    #row-1 {
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .row-1-flex {
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .div-button {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .header-button {
+        background-color: transparent;
+        border: none;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+    }
+
+    #search_bar {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 0.4rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #search {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    #glass {
+        height: 100%;
+        width: 100%;
+    }
+
+
 }
+
 @media screen and (min-width: 768px) {
-    
+    header {
+        width: 100%;
+        height: 20vh;
+        background-color: rgb(3, 130, 214);
+    }
+    #menu {
+    display: none;}
+    #logo {
+        width: 12vw;
+    }
 }
