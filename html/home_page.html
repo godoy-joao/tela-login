@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +14,19 @@
 </head>
 
 <body>
-    <header>
+    <header id="header-mobile">
         <div id="wrapper">
             <div id="row-1" class="rows">
                 <div id="row-1-left" class="row-1-flex">
-                
-                        <div class="div-button" id="menu">
-                            <button class="header-button" id="bars">
-                                <i class="fa-solid fa-bars icon"></i>
-                            </button>
-                        </div>
-                        <div id="div-logo">
-                            <img id="logo" src="../assets/logo_senai.png" alt="">
-                        </div>
-                   
-
+                    <div class="div-button" id="menu">
+                        <button class="header-button" id="bars">
+                            <i class="fa-solid fa-bars icon"></i>
+                        </button>
+                    </div>
+                    <div id="div-logo">
+                        <img id="logo" src="../assets/logo_senai.png" alt="">
+                    </div>
                 </div>
-
                 <div id="row-1-right" class="row-1-flex">
                     <div class="div-button" id="profile">
                         <button class="header-button" id="user">
@@ -40,19 +39,102 @@
                         </button>
                     </div>
                 </div>
-
             </div>
-            <nav id="row-2" class="rows">
+            <div id="row-2" class="rows">
                 <div id="search_bar">
                     <input type="search" name="" id="search">
                     <button id="glass" class="header-button">
                         <i class="fa-solid fa-magnifying-glass icon"></i>
                     </button>
                 </div>
-            </nav>
+            </div>
+            <div id="row-3" class="rows">
+                <ul class="categories">
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <main></main>
+    <header id="header-desktop">
+        <div class="wrapper">
+            <div>
+                <input type="search" name="search" id="search">
+                <button><i class="fa-solid fa-magnifying-glass icon"></i></button>
+            </div>
+            <div>
+                <button><i class="fa-solid fa-circle-user">Minha conta</i>Minha conta</button>
+            </div>
+            <div>
+                <button><i class="fa-solid fa-cart-shopping icon"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-carousel" class="carousel slide px-5" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../assets/banners/LC_Banner-Dsk_M1DM.png"
+                        alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/banners/LC_Banner_Dsk_BDMN.png"
+                        alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/banners/LC_Banner_Dsk_Editora-Todo-Livro.png"
+                        alt="Terceiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/banners/LC_Banner_Dsk_Editoras_ACDN.png"
+                        alt="Quarto Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <div id="carousel-best-sellers" class="carousel slide mt-1 px-2" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-best-sellers" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-best-sellers" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
